@@ -1,0 +1,41 @@
+.footer_margin {
+    margin-bottom: 100px;
+}
+
+.footer__heading {
+    padding-top: 80px;
+    margin-bottom: 60px;
+}
+
+.footer__heading_font {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 32px;
+    color: var(--accent-color);
+}
+
+.footer-map {
+    height: 600px;
+}
+
+.footer-map_bg {
+    background-image: url(../../images/landing-page/footer/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+
+    .footer-map {
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .footer-map {
+        height: 300px;
+    }
+
+}

@@ -1,0 +1,55 @@
+* {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+:root {
+    --accent-color: #841212;
+    --main-color: #DDDBD8;
+    --time: .2s;
+    --time-long: .4s;
+}
+
+::selection {
+    background-color: var(--accent-color);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.body_no-scroll {
+    overflow: hidden;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.grid-box {
+    display: grid;
+}
+
+.main {
+    margin-bottom: 100px;
+}

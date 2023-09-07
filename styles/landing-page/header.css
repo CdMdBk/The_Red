@@ -1,0 +1,119 @@
+.header {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+
+.header_bg {
+    background-image: url(../../images/landing-page/header/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header_bg-over {
+    background-image: linear-gradient(90deg, #D0CDC5 13.56%, rgba(255, 255, 255, 0) 59.07%);
+    width: 100%;
+    height: 100%;
+}
+
+.header__content-box {
+    margin-top: 10vh;
+    height: calc(80vh - 70px);
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__text-box {
+    width: 500px;
+}
+
+.header__text-box_font {
+    color: var(--accent-color);
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 20px;
+}
+
+.header__text-box_heading {
+    color: #fff;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 92px;
+}
+
+.header__button {
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    padding: 21px 42px;
+    width: calc(98px + 42px*2);
+
+    transition: var(--time-long);
+}
+
+.header__button:hover {
+    background-color: var(--main-color);
+    width: calc(110px + 42px*2);
+}
+
+.header__button_font {
+    transition: var(--time-long);
+}
+
+.header__button:hover .header__button_font {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        margin-top: 0;
+        height: 100vh;
+        padding: 0;
+
+        /*justify-content: center;*/
+    }
+
+    .header_bg-over {
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 0;
+        height: 100vh;
+        background: linear-gradient(90deg, rgba(208, 205, 197, 0.8) 12.44%, rgba(224, 222, 217, 0.527219) 67.15%, rgba(255, 255, 255, 0) 94.5%);
+    }
+
+    .header__content-box {
+        height: 60vh;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__text-box {
+        width: 400px;
+    }
+
+    .header__text-box_font {
+        text-align: center;
+    }
+
+    .header__text-box_heading {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .header__text-box {
+        width: 300px;
+    }
+
+    .header__text-box_font {
+        font-size: 16px;
+    }
+
+    .header__text-box_heading {
+        font-size: 56px;
+    }
+
+}

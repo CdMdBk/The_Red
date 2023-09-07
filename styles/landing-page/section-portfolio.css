@@ -1,0 +1,129 @@
+.portfolio-slider {
+    position: relative;
+}
+
+.portfolio-slider__arrow {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-slider__arrow-left, .portfolio-slider__arrow-right {
+    width: 40px;
+    cursor: pointer;
+}
+
+.portfolio-slider__button {
+    border-radius: 15px;
+    background-color: #fff;
+    border: 3px solid var(--accent-color);
+    padding: 21px 42px;
+    width: calc(98px + 42px*2);
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    transition: var(--time-long);
+}
+
+.portfolio-slider__button:hover {
+    background-color: var(--accent-color);
+    width: calc(110px + 42px*2);
+    border: none;
+}
+
+.portfolio-slider__button_font {
+    transition: var(--time-long);
+    color: var(--accent-color);
+}
+
+.portfolio-slider__button:hover .portfolio-slider__button_font {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media (max-width: 992px) {
+
+    .portfolio-slider__arrow-left, .portfolio-slider__arrow-right {
+        width: 30px;
+    }
+
+    .portfolio-slider__arrow:nth-child(1) {
+        justify-content: flex-start;
+    }
+
+    .portfolio-slider__arrow:nth-last-child(1) {
+        justify-content: flex-end;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .portfolio-slider__arrow:nth-child(1), .portfolio-slider__arrow:nth-last-child(1) {
+        justify-content: center;
+    }
+
+}
+
+/*Slider*/
+
+.portfolio-slider__viewing-window {
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.portfolio-slider__full-window {
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 0;
+    height: 100%;
+    transform: translate(0,0);
+    transition: var(--time-long);
+    transition-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.portfolio-slider__card {
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-slider__image {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+
+@media (max-width: 992px) {
+
+    .portfolio-slider__full-window {
+        gap: 30px 0;
+    }
+
+    .portfolio-slider__image {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .portfolio-slider__full-window {
+        gap: 23px 0;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .portfolio-slider__full-window {
+        grid-template-rows: 1fr;
+        gap: 0;
+    }
+
+    .portfolio-slider__image {
+        width: 80%;
+    }
+
+}
